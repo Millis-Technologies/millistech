@@ -1,0 +1,78 @@
+name: millistech
+recipe: laravel
+config:
+  php: '8.3'
+  via: apache:2.4
+  webroot: public
+  database: mysql:8.0
+
+services:
+  database:
+    portforward: 5509
+  node:
+    type: node
+    build:
+      - npm install
+  mailhog:
+    type: mailhog
+    portforward: true
+    hogfrom:
+      - appserver
+
+proxy:
+  appserver:
+    - lando.millistech.com
+  mailhog:
+    - mail.lando.millistech.com
+
+tooling:
+  npm:
+    service: node
+  node:
+    service: node
+  ide-helper:
+    service: appserver
+    description: Runs ide-helper for laravel
+    cmd: php artisan ide-helper:eloquent && php artisan ide-helper:generate && php artisan ide-helper:meta && php artisan ide-helper:models -N
+
+  # Handy tool for turning on and off xdebug quickly
+  # See for more info on setting up
+  # https://docs.lando.dev/guides/lando-phpstorm.html#debugging-drush-commands
+  xdebug-on:
+    service: appserver
+    description: Enable xdebug for apache.
+    cmd: docker-php-ext-enable xdebug && /etc/init.d/apache2 reload
+    user: root
+
+  xdebug-off:
+    service: appserver
+    description: Disable xdebug for apache.
+    cmd: rm /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini && /etc/init.d/apache2 reload
+    user: root
+
+
+# Make sure to add the following to your /etc/hosts file
+# 127.0.0.1   lando.dsc.uci.edu
+# 127.0.0.1   mail.lando.dsc.uci.edu
+
+
+# Use these for your .env for lando DB and mailhog
+
+#DB_CONNECTION=mysql
+#DB_HOST=database
+#DB_PORT=3306
+#DB_DATABASE=laravel
+#DB_USERNAME=laravel
+#DB_PASSWORD=laravel
+
+
+#MAIL_MAILER=smtp
+#MAIL_HOST=lando
+#MAIL_PORT=1025
+#MAIL_USERNAME=null
+#MAIL_PASSWORD=null
+#MAIL_ENCRYPTION=null
+
+# Trust Lando SSL cert by running
+# sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain ~/.lando/certs/lndo.site.pem
+# https://docs.lando.dev/config/security.html#trusting-the-ca
