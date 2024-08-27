@@ -78,18 +78,18 @@
                 </div>
             </div>
 
-            <div class="offset-lg-1 col-lg-5">
+            <div class="offset-lg-1 col-lg-6">
                 <div class="main_title text-left">
                     <h2>let me <br>
                         Introduce <br>
                         myself</h2>
                     <p>
-                       words
+                        I am born and raised in Orange County California and have been programming and building custom applications professionally for over 10 years.
                     </p>
+
                     <p>
-                        words
+                        I love to hear about other's businesses and passions and help them bring their ideas to life.
                     </p>
-                    <a class="primary_btn" href="#"><span>Download CV</span></a>
                 </div>
             </div>
         </div>
@@ -103,10 +103,13 @@
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
                 <div class="main_title">
-                    <h2>service offers </h2>
+                    <h2>How We Get Started</h2>
                     <p>
-                        Is give may shall likeness made yielding spirit a itself togeth created
-                        after sea <br> is in beast beginning signs open god you're gathering ithe
+                        I focus on making custom web apps that simplify business tasks and boost productivity. Using modern technology and a user-first approach, I create tools that help streamline your operations.
+                    </p>
+
+                    <p>
+                        Here are the steps I take to ensure your project is a success.
                     </p>
                 </div>
             </div>
@@ -115,29 +118,29 @@
             <div class="col-lg-3 col-md-6">
                 <div class="feature_item">
                     <img src="img/services/s1.png" alt="">
-                    <h4>Wp developing</h4>
-                    <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                    <h4>Information Gathering</h4>
+                    <p>I learn everything there is to know about your business and your processes.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="feature_item">
                     <img src="img/services/s2.png" alt="">
-                    <h4>UI/ux design</h4>
-                    <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                    <h4>Rough Draft</h4>
+                    <p>I create a rough plan on how I best think we can create a unique solution for your business.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="feature_item">
                     <img src="img/services/s3.png" alt="">
-                    <h4>Web design</h4>
-                    <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                    <h4>Work Starts</h4>
+                    <p>After an inital agreement, I get started on your custom business web application.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="feature_item">
                     <img src="img/services/s4.png" alt="">
-                    <h4>seo optimize</h4>
-                    <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+                    <h4>Launch</h4>
+                    <p>We review, launch and continue to optimize your application for your needs.</p>
                 </div>
             </div>
         </div>
@@ -242,7 +245,47 @@
         <div class="row justify-content-center">
             <div class="col-lg-6">
                 <div class="row">
-                    Contact Me Form
+                    @if (session('success'))
+                        <div class="alert alert-success">
+                            {{ session('success') }}
+                        </div>
+                    @endif
+
+                    @if ($errors->any())
+                        <div class="alert alert-danger">
+                            <ul class="m-0">
+                                @foreach ($errors->all() as $error)
+                                    <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
+                    <form action="{{ route('submit-contact-form') }}" method="POST">
+                        @csrf
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                            <div class="invalid-feedback">
+                                Please enter your name.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <div class="invalid-feedback">
+                                Please enter a valid email address.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" name="message" required></textarea>
+                            <div class="invalid-feedback">
+                                Please enter your message.
+                            </div>
+                        </div>
+                        <button type="submit" class="primary_btn p-0"><span class="px-3">Send Message</span></button>
+
+                    </form>
                 </div>
             </div>
             <div class="offset-lg-2 col-lg-4 col-md-6">
