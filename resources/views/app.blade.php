@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="index.html"><img class="img-fluid" src="mmillis_img/millis_tech_logo.jpg" alt=""></a>
+                <a class="navbar-brand logo_h" href="/"><img class="img-fluid" src="mmillis_img/millis_tech_logo.jpg" alt="Millis Tech Logo"></a>
 
                 <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
