@@ -44,12 +44,12 @@
             <div class="row">
                 <div class="col-lg-7">
                     <div class="banner_content">
-                        <h3 class="text-uppercase">HellO</h3>
+                        <h3 class="text-uppercase">Hello</h3>
                         <h1 class="text-uppercase">I am Michael Millis</h1>
                         <h5 class="text-uppercase">senior web and app developer</h5>
                         <div class="d-flex align-items-center">
-                            <a class="primary_btn" href="#"><span>Hire Me</span></a>
-                            <a class="primary_btn tr-bg" href="#"><span>Get CV</span></a>
+                            <a class="primary_btn" href="#"><span>(949) 414-6986</span></a>
+{{--                            <a class="primary_btn tr-bg" href="#"><span>Get CV</span></a>--}}
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
                         Introduce <br>
                         myself</h2>
                     <p>
-                        I am born and raised in Orange County California and have been programming and building custom applications professionally for over 10 years.
+                        I am born and raised in Souther California and have been programming and building custom applications professionally for over 10 years.
                     </p>
 
                     <p>
@@ -101,7 +101,7 @@
                 <div class="main_title">
                     <h2>How We Get Started</h2>
                     <p>
-                        I focus on making custom web apps that simplify business tasks and boost productivity. Using modern technology and a user-first approach, I create tools that help streamline your operations.
+                        I focus on making custom web applications that simplify business tasks and boost productivity. Using modern technology and a user-first approach, I create tools that help streamline your operations.
                     </p>
 
                     <p>
@@ -297,7 +297,7 @@
                         </div>
                         <div class="ml-15">
                             <p>call me anytime!</p>
-                            <h3>(+1)-800-555-6789</h3>
+                            <h3>(949) 414-6986</h3>
                         </div>
                     </div>
                 </div>
