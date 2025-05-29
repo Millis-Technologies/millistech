@@ -80,7 +80,7 @@
                         Introduce <br>
                         myself</h2>
                     <p>
-                        I am born and raised in Souther California and have been programming and building custom applications professionally for over 10 years.
+                        I am born and raised in Southern California and have been programming and building custom applications professionally for over 10 years.
                     </p>
 
                     <p>
