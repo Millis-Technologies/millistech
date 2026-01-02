@@ -1,22 +1,13 @@
 .section_gap {
-	padding: 200px 0;
-	@media (max-width: 1199px) {
-		padding: 80px 0;
-	}
+	padding: clamp(80px, 10vw, 120px) 0; // Modern responsive spacing
 }
 
 .section_gap_top {
-	padding-top: 200px;
-	@media (max-width: 1199px) {
-		padding-top: 80px;
-	}
+	padding-top: clamp(80px, 10vw, 120px);
 }
 
 .section_gap_bottom {
-	padding-bottom: 200px;
-	@media (max-width: 1199px) {
-		padding-bottom: 80px;
-	}
+	padding-bottom: clamp(80px, 10vw, 120px);
 }
 
 /* Main Title Area css
@@ -24,28 +15,25 @@
 
 .main_title {
 	text-align: center;
-	margin-bottom: 100px;
-	@media (max-width: 1199px) {
-		margin-bottom: 50px;
-	}
+	margin-bottom: clamp(60px, 8vw, 100px);
 	h2 {
-		font-size: 36px;
+		font-size: clamp(32px, 4vw, 48px);
 		font-weight: 700;
-		margin-bottom: 15px;
-		line-height: 50px;
+		margin-bottom: 24px;
+		line-height: 1.2;
 		text-transform: uppercase;
+		color: $neutral-900;
 		br {
 			@media (max-width: 991px) {
 				display: none;
 			}
 		}
-		@media (max-width: 767px) {
-			font-size: 30px;
-			line-height: 34px;
-		}
 	}
 	p {
+		font-size: 18px;
+		line-height: 1.7;
 		margin-bottom: 0px;
+		color: $neutral-600;
 		br {
 			@media (max-width: 991px) {
 				display: none;
@@ -92,47 +80,47 @@
 
 .primary_btn {
 	display: inline-block;
-	color: #fff;
-	letter-spacing: 0px;
+	background: linear-gradient(90deg, $primary-color 0%, $primary-color2 100%);
+	border: none;
+	border-radius: 10px;
+	padding: 14px 32px;
 	font-family: $title-font;
 	font-weight: 500;
 	font-size: 14px;
-	line-height: 46px;
-	outline: none !important;
+	line-height: 1.5;
+	color: #fff;
 	text-align: center;
-	cursor: pointer;
 	text-transform: uppercase;
-	border-radius: 5px;
-	background-origin: border-box;
-	background-clip: content-box, border-box;
-	background-image: linear-gradient(to right, $primary-color 0%, $primary-color2 100%),
-		radial-gradient(circle at top left, $primary-color, $primary-color2);
-	border: double 2px transparent;
-	box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
+	cursor: pointer;
+	box-shadow: $shadow-md;
+	transition: all 0.2s $ease-out;
 	span {
-		padding: 0 42px;
-	}
-	&.tr-bg {
-		background-image: linear-gradient(#ffffff, #ffffff),
-			radial-gradient(circle at top left, $primary-color, $primary-color2);
-		border: 2px solid transparent;
-		color: #222222;
-		box-shadow: none;
-		&:hover {
-			background-image: linear-gradient(to right, $primary-color 0%, $primary-color2 100%),
-				radial-gradient(circle at top left, $primary-color, $primary-color2);
-			border: double 2px transparent;
-			color: #ffffff;
-			box-shadow: 0px 10px 30px rgba(118, 85, 225, 0.3);
-		}
+		padding: 0;
 	}
 	&:hover {
-		background-image: linear-gradient(#ffffff, #ffffff),
-			radial-gradient(circle at top left, $primary-color, $primary-color2);
-		border: 2px solid $primary-color2;
-		color: #222222;
-		box-shadow: none;
-		background-clip: border-box;
+		transform: translateY(-2px);
+		box-shadow: $shadow-lg;
+		color: #fff;
+	}
+	&:active {
+		transform: translateY(0);
+		box-shadow: $shadow-sm;
+	}
+	&:focus-visible {
+		outline: 3px solid rgba($primary-color, 0.3);
+		outline-offset: 2px;
+	}
+	&.tr-bg {
+		background: #ffffff;
+		border: 2px solid $primary-color;
+		color: $primary-color;
+		box-shadow: $shadow-sm;
+		&:hover {
+			background: linear-gradient(90deg, $primary-color 0%, $primary-color2 100%);
+			border: 2px solid transparent;
+			color: #ffffff;
+			box-shadow: $shadow-lg;
+		}
 	}
 }
 

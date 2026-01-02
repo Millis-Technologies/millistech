@@ -4,6 +4,12 @@
     width: 100%;
     z-index: 9999;
     background: #ffffff;
+    transition: all 0.3s $ease-out;
+    &.scrolled {
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: $shadow-sm;
+    }
     .menu_nav {
         width: 100%;
     }
@@ -17,19 +23,31 @@
             .nav-item {
                 margin-right: 45px;
                 .nav-link {
-                    font: 500 18px/100px $title-font;
+                    font: 500 16px/70px $title-font;
                     text-transform: uppercase;
                     color: $title-color;
-                    padding: 0px;
+                    padding: 0 20px;
                     display: inline-block;
+                    position: relative;
                     &:after {
-                        display: none;
+                        content: '';
+                        position: absolute;
+                        bottom: 20px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 0;
+                        height: 2px;
+                        background: $primary-color;
+                        transition: width 0.3s $ease-out;
                     }
                 }
                 &:hover,
                 &.active {
                     .nav-link {
                         color: $primary-color;
+                        &:after {
+                            width: calc(100% - 40px);
+                        }
                     }
                 }
                 &.submenu {

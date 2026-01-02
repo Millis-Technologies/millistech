@@ -357,7 +357,7 @@
                                 Please enter your message.
                             </div>
                         </div>
-                        <button type="submit" class="primary_btn p-0"><span class="px-3">Send Message</span></button>
+                        <button type="submit" class="primary_btn p-3"><span class="px-3">Send Message</span></button>
 
                     </form>
                 </div>

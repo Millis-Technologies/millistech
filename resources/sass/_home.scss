@@ -49,26 +49,37 @@
 	}
 }
 .feature_item {
+	background: linear-gradient(135deg, #ffffff 0%, #f9f9fd 100%);
+	border-radius: 12px;
 	padding: 45px 25px;
 	text-align: center;
-	background: #f9f9fd;
+	border-top: 3px solid transparent;
+	box-shadow: $shadow-sm;
 	cursor: pointer;
 	margin-bottom: 30px;
-	@include transition;
+	transition: all 0.3s $ease-out;
 	img {
+		margin-bottom: 35px;
+	}
+	svg {
 		margin-bottom: 35px;
 	}
 	h4 {
 		font-size: 20px;
-		margin-bottom: 20px;
+		margin-bottom: 16px;
 		text-transform: uppercase;
+		color: $neutral-900;
 	}
 	p {
 		margin-bottom: 0px;
+		color: $neutral-600;
+		line-height: 1.6;
 	}
 	&:hover {
-		box-shadow: 0px 15px 30px rgba(77, 87, 222, 0.3);
-		background: #fff;
+		transform: translateY(-8px);
+		border-top-color: $primary-color;
+		box-shadow: $shadow-xl;
+		background: #ffffff;
 	}
 }
 

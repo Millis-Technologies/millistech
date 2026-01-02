@@ -40,31 +40,61 @@
 	.form-group {
 		margin-bottom: 10px;
 		.form-control {
-			font-size: 13px;
-			line-height: 26px;
-			color: #999;
-			border: 1px solid #eeeeee;
+			border: 2px solid $neutral-200;
+			border-radius: 8px;
+			padding: 16px 20px;
+			font-size: 16px;
+			line-height: 1.5;
+			color: $neutral-900;
+			background: #fff;
 			font-family: $primary-font;
-			border-radius: 0px;
-			padding-left: 20px;
+			transition: all 0.2s $ease-out;
 			&:focus {
-				box-shadow: none;
 				outline: none;
+				border-color: $primary-color;
+				box-shadow: 0 0 0 4px rgba($primary-color, 0.1);
 			}
 			@include placeholder {
-				color: #999;
+				color: $neutral-400;
 			}
 		}
 		textarea {
-			resize: none;
+			resize: vertical;
 			&.form-control {
-				height: 134px;
+				min-height: 120px;
 			}
 		}
 	}
 	.primary_btn {
 		margin-top: 20px;
 	}
+}
+
+// Also modernize Bootstrap forms in the contact section
+.form-control,
+.form-select {
+	border: 2px solid $neutral-200;
+	border-radius: 8px;
+	padding: 16px 20px;
+	font-size: 16px;
+	line-height: 1.5;
+	background: #fff;
+	transition: all 0.2s $ease-out;
+
+	&:focus {
+		outline: none;
+		border-color: $primary-color;
+		box-shadow: 0 0 0 4px rgba($primary-color, 0.1);
+	}
+
+	&::placeholder {
+		color: $neutral-400;
+	}
+}
+
+textarea.form-control {
+	resize: vertical;
+	min-height: 120px;
 }
 
 /* Contact Success and error Area css
