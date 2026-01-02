@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactFormSubmitted;
 use App\Models\FormSubmission;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 
 class SubmitContactFormController extends Controller {
@@ -27,13 +29,14 @@ class SubmitContactFormController extends Controller {
 
         $validated = $validator->validated();
 
-        FormSubmission::create([
+        $submission = FormSubmission::create([
             'name' => $validated['name'],
             'email' => $validated['email'],
             'message' => $validated['message'],
         ]);
 
+        Mail::to('mmillis@pm.me')->queue(new ContactFormSubmitted($submission));
+
         return redirect(url()->route('home') . '#contact')->with('success', 'Success! You will hear back from us soon.');
     }
-
 }
