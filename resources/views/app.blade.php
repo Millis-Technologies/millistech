@@ -57,8 +57,9 @@
                         <h1 class="text-uppercase">I am Michael Millis</h1>
                         <h5 class="text-uppercase">Custom Web & Application Developer | SaaS & Internal Tools Specialist</h5>
                         <p style="font-size: 1.1rem; margin-top: 1rem; line-height: 1.4;">I build custom web applications that reduce manual work and integrate AI into your business workflows</p>
-                        <div class="d-flex align-items-center mt-4">
-                            <a class="primary_btn" href="#"><span>(949) 414-6986</span></a>
+                        <div class="d-flex align-items-center mt-4 gap-3">
+                            <a class="primary_btn" href="tel:+19494146986"><span>(949) 414-6986</span></a>
+                            <a class="primary_btn tr-bg" href="mailto:michael@millistech.com"><span>Email Me</span></a>
 {{--                            <a class="primary_btn tr-bg" href="#"><span>Get CV</span></a>--}}
                         </div>
                     </div>
@@ -375,6 +376,15 @@
                         <div class="ml-15">
                             <p>Ready to streamline your business?</p>
                             <h3>(949) 414-6986</h3>
+                        </div>
+                    </div>
+                    <div class="call-now d-flex mt-4">
+                        <div>
+                            <span class="fa fa-envelope"></span>
+                        </div>
+                        <div class="ml-15">
+                            <p>Or send me an email:</p>
+                            <h3><a href="mailto:michael@millistech.com" style="color: inherit; text-decoration: none;">michael@millistech.com</a></h3>
                         </div>
                     </div>
                 </div>
