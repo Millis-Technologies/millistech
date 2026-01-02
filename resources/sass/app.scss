@@ -50,6 +50,15 @@
 
 .logo_h img{
   max-height: 170px;
+  @media (max-width: 991px) {
+    max-height: 120px;
+  }
+  @media (max-width: 767px) {
+    max-height: 80px;
+  }
+  @media (max-width: 480px) {
+    max-height: 60px;
+  }
 }
 
 #navbarSupportedContent {
