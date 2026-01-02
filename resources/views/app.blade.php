@@ -55,8 +55,9 @@
                     <div class="banner_content">
                         <h3 class="text-uppercase">Hello</h3>
                         <h1 class="text-uppercase">I am Michael Millis</h1>
-                        <h5 class="text-uppercase">senior web and app developer</h5>
-                        <div class="d-flex align-items-center">
+                        <h5 class="text-uppercase">Custom Web & Application Developer | SaaS & Internal Tools Specialist</h5>
+                        <p style="font-size: 1.1rem; margin-top: 1rem; line-height: 1.4;">I build custom web applications that reduce manual work and integrate AI into your business workflows</p>
+                        <div class="d-flex align-items-center mt-4">
                             <a class="primary_btn" href="#"><span>(949) 414-6986</span></a>
 {{--                            <a class="primary_btn tr-bg" href="#"><span>Get CV</span></a>--}}
                         </div>
@@ -89,11 +90,11 @@
                         Introduce <br>
                         myself</h2>
                     <p>
-                        I am born and raised in Southern California and have been programming and building custom applications professionally for over 10 years.
+                        Born and raised in Southern California, I have been programming and building custom applications professionally for over 10 years. I've spent the last decade developing business-focused solutions, from event registration systems and text messaging platforms to AI-powered sentiment analysis tools.
                     </p>
 
                     <p>
-                        I love to hear about other's businesses and passions and help them bring their ideas to life.
+                        I specialize in Laravel, JavaScript, and the LAMP stack to build robust, scalable applications. I partner with businesses to understand their unique challenges and create custom applications that streamline operations and eliminate manual workflows.
                     </p>
                 </div>
             </div>
@@ -102,50 +103,117 @@
 </section>
 <!--================ End About Us Area =================-->
 
+<!--================ Start What I Build Area =================-->
+<section class="features_area" id="what-i-build">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <div class="main_title">
+                    <h2>What I Build</h2>
+                    <p>
+                        With 10+ years of professional development experience, I bring deep technical expertise and a business-first approach to every project.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row feature_inner justify-content-center">
+            <div class="col-lg-4 col-md-6 d-flex">
+                <div class="feature_item d-flex flex-column h-100">
+                    <div class="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: #f9d923; margin-bottom: 1.5rem;">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                            <polyline points="6 9 9 12 13 8"></polyline>
+                            <polyline points="9 6 11 8 13 6"></polyline>
+                        </svg>
+                    </div>
+                    <h4 class="text-center">Custom Web Applications</h4>
+                    <p>Business-focused web applications tailored to your specific needs, from SaaS products to internal tools.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex">
+                <div class="feature_item d-flex flex-column h-100">
+                    <div class="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: #f9d923; margin-bottom: 1.5rem;">
+                            <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a7 7 0 0 1 7 7h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v1a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h1a7 7 0 0 1 7-7h1V5.73c-.6-.34-1-.99-1-1.73a2 2 0 0 1 2-2z"></path>
+                            <circle cx="9" cy="13" r="1.5"></circle>
+                            <circle cx="15" cy="13" r="1.5"></circle>
+                        </svg>
+                    </div>
+                    <h4 class="text-center">AI-Powered Solutions</h4>
+                    <p>Integrate artificial intelligence into your workflows, including automated document processing, sentiment analysis, and intelligent chatbots.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 d-flex">
+                <div class="feature_item d-flex flex-column h-100">
+                    <div class="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="color: #f9d923; margin-bottom: 1.5rem;">
+                            <circle cx="12" cy="12" r="3"></circle>
+                            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+                        </svg>
+                    </div>
+                    <h4 class="text-center">Workflow Automation</h4>
+                    <p>Replace manual, repetitive tasks with efficient, automated processes that save time and reduce errors.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--================ End What I Build Area =================-->
+
 <!--================ Start Features Area =================-->
 <section class="features_area" id="features">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8 text-center">
                 <div class="main_title">
-                    <h2>How We Get Started</h2>
+                    <h2>How I Work</h2>
                     <p>
-                        I focus on making custom web applications that simplify business tasks and boost productivity. Using modern technology and a user-first approach, I create tools that help streamline your operations.
+                        I take a collaborative, structured approach to building custom applications. Every project starts with understanding your business, not just writing code.
                     </p>
 
                     <p>
-                        Here are the steps I take to ensure your project is a success.
+                        Here's how I ensure your project succeeds.
                     </p>
                 </div>
             </div>
         </div>
         <div class="row feature_inner">
-            <div class="col-lg-3 col-md-6">
-                <div class="feature_item">
-                    <img src="img/services/s1.png" alt="">
-                    <h4>Information Gathering</h4>
-                    <p>I learn everything there is to know about your business and your processes.</p>
+            <div class="col-lg-3 col-md-6 d-flex">
+                <div class="feature_item d-flex flex-column h-100">
+                    <div class="text-center">
+                        <img src="img/services/s1.png" alt="" style="max-width: 64px; height: auto; display: inline-block;">
+                    </div>
+                    <h4 class="text-center">Information Gathering</h4>
+                    <p>I dive deep into your business processes, pain points, and goals to understand exactly what you need.</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="feature_item">
-                    <img src="img/services/s2.png" alt="">
-                    <h4>Rough Draft</h4>
-                    <p>I create a rough plan on how I best think we can create a unique solution for your business.</p>
+            <div class="col-lg-3 col-md-6 d-flex">
+                <div class="feature_item d-flex flex-column h-100">
+                    <div class="text-center">
+                        <img src="img/services/s2.png" alt="" style="max-width: 64px; height: auto; display: inline-block;">
+                    </div>
+                    <h4 class="text-center">Strategic Planning</h4>
+                    <p>I create a detailed technical plan and architecture that addresses your specific requirements.</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="feature_item">
-                    <img src="img/services/s3.png" alt="">
-                    <h4>Work Starts</h4>
-                    <p>After an inital agreement, I get started on your custom business web application.</p>
+            <div class="col-lg-3 col-md-6 d-flex">
+                <div class="feature_item d-flex flex-column h-100">
+                    <div class="text-center">
+                        <img src="img/services/s3.png" alt="" style="max-width: 64px; height: auto; display: inline-block;">
+                    </div>
+                    <h4 class="text-center">Development</h4>
+                    <p>I build your custom application using proven technologies (Laravel, JavaScript, LAMP stack), ensuring clean code and scalability.</p>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="feature_item">
-                    <img src="img/services/s4.png" alt="">
-                    <h4>Launch</h4>
-                    <p>We review, launch and continue to optimize your application for your needs.</p>
+            <div class="col-lg-3 col-md-6 d-flex">
+                <div class="feature_item d-flex flex-column h-100">
+                    <div class="text-center">
+                        <img src="img/services/s4.png" alt="" style="max-width: 64px; height: auto; display: inline-block;">
+                    </div>
+                    <h4 class="text-center">Launch & Support</h4>
+                    <p>We launch together, then I provide ongoing support and optimization as your needs evolve.</p>
                 </div>
             </div>
         </div>
@@ -305,7 +373,7 @@
                             <span class="fa fa-phone"></span>
                         </div>
                         <div class="ml-15">
-                            <p>call me anytime!</p>
+                            <p>Ready to streamline your business?</p>
                             <h3>(949) 414-6986</h3>
                         </div>
                     </div>
