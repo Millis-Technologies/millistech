@@ -55,8 +55,8 @@
                     <div class="banner_content">
                         <h3 class="text-uppercase">Hello</h3>
                         <h1 class="text-uppercase">I am Michael Millis</h1>
-                        <h5 class="text-uppercase">Custom Web & Application Developer | SaaS & Internal Tools Specialist</h5>
-                        <p style="font-size: 1.1rem; margin-top: 1rem; line-height: 1.4;">I build custom web applications that reduce manual work and integrate AI into your business workflows</p>
+                        <h5 class="text-uppercase">Helping Businesses Automate Operations & Reduce Manual Work</h5>
+                        <p style="font-size: 1.1rem; margin-top: 1rem; line-height: 1.4;">I create software that handles your repetitive tasks automatically, so you can focus on growing your business</p>
                         <div class="d-flex align-items-center mt-4 gap-3">
                             <a class="primary_btn" href="tel:+19494146986"><span>(949) 414-6986</span></a>
                             <a class="primary_btn tr-bg" href="mailto:michael@millistech.com"><span>Email Me</span></a>
@@ -95,7 +95,7 @@
                     </p>
 
                     <p>
-                        I specialize in Laravel, JavaScript, and the LAMP stack to build robust, scalable applications. I partner with businesses to understand their unique challenges and create custom applications that streamline operations and eliminate manual workflows.
+                        I partner with businesses to deeply understand their unique challenges. Then I create custom software solutions that streamline operations, eliminate time-consuming manual tasks, and help your team work more efficiently.
                     </p>
                 </div>
             </div>
@@ -205,7 +205,7 @@
                         <img src="img/services/s3.png" alt="" style="max-width: 64px; height: auto; display: inline-block;">
                     </div>
                     <h4 class="text-center">Development</h4>
-                    <p>I build your custom application using proven technologies (Laravel, JavaScript, LAMP stack), ensuring clean code and scalability.</p>
+                    <p>I use proven, professional-grade tools to ensure your solution is reliable, secure, and built to grow with your business.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 d-flex">
